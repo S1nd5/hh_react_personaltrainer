@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# hh_react_carshop
+HEAD
+# hh_react_personaltrainer
 =======
 # Getting Started with Create React App
 
