@@ -38,10 +38,10 @@ export default function Traininglist() {
         {
             field: 'date', sortable: true, filter: true, cellRendererFramework: function (params) {
                 return (
-                    <p>{format(parseISO(params.data.date), 'dd.MM.yyyy hh:mm', { timeZone: "UTC" })}</p>
+                    <p>{format(parseISO(params.data.date), 'dd.MM.yyyy hh:mm a', { timeZone: "UTC" })}</p>
                 );
             }, getQuickFilterText: function (params) {
-                return format(parseISO(params.data.date), 'dd.MM.yyyy hh:mm', { timeZone: "UTC" });
+                return format(parseISO(params.data.date), 'dd.MM.yyyy hh:mm a', { timeZone: "UTC" });
             }
         },
         { field: 'duration', sortable: true, filter: true },

@@ -47,10 +47,10 @@ export default function Editcustomer(props) {
                 Edit
             </Button>
             <Dialog open={open} onClose={handleClickClose}>
-                <DialogTitle>New customers</DialogTitle>
+                <DialogTitle>Edit customer - {customer.firstname} {customer.lastname}</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        Creates a new customer to the database
+                        Let's you edit existing customer information and update it
                     </DialogContentText>
                     <TextField
                         autoFocus

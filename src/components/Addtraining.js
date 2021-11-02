@@ -44,7 +44,6 @@ export default function Addtraining(props) {
 
     const save = () => {
         handleClickClose();
-        //training.date.toISOString();
         props.saveTraining(training);
     }
 
@@ -102,12 +101,12 @@ export default function Addtraining(props) {
                         onChange={e => handleInputChange(e)}
                         fullWidth
                     >
-                        <MenuItem value="">
-                            <em>Select activity</em>
-                        </MenuItem>
-                        {activities.map(activity => {
-                            return <MenuItem value={activity}>{activity}</MenuItem>;
-                        })}
+                    <MenuItem value="">
+                        <em>Select activity</em>
+                    </MenuItem>
+                    {activities.map(activity => {
+                        return <MenuItem value={activity}>{activity}</MenuItem>;
+                    })}
                     </Select>
                     <InputLabel>Duration</InputLabel>
                     <TextField
@@ -131,12 +130,12 @@ export default function Addtraining(props) {
                         fullWidth
                         variant="standard"
                     >
-                        <MenuItem value="">
-                            <em>Select customer</em>
-                        </MenuItem>
-                        {customers.map(customer => {
-                            return <MenuItem value={customer.links[0].href}>{customer.firstname} {customer.lastname}</MenuItem>;
-                        })}
+                    <MenuItem value="">
+                         <em>Select customer</em>
+                    </MenuItem>
+                    {customers.map(customer => {
+                        return <MenuItem value={customer.links[0].href}>{customer.firstname} {customer.lastname}</MenuItem>;
+                    })}
                     </Select>
                 </DialogContent>
                 <DialogActions>

@@ -45,10 +45,10 @@ export default function Addcar(props) {
                 Add new customer
             </Button>
             <Dialog open={open} onClose={handleClickClose}>
-                <DialogTitle>New customers</DialogTitle>
+                <DialogTitle>New customer</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        Creates a new customer to the database
+                        Let's you create a new customer to the database
                     </DialogContentText>
                     <TextField
                         autoFocus
