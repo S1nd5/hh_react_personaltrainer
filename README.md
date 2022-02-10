@@ -1,5 +1,6 @@
-# hh_react_personaltrainer
-Haaga-Heali front-end course end project
+# React Personal Trainer
+Personal Trainer Application with React to manage customers and their trainings. Front-end course final project. Back-end was provided by the course [Check here](https://customerrest.herokuapp.com/api).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
